@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zubaida | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background: linear-gradient(135deg,#1e3a8a,#0f172a);
+color:#f1f5f9;
+}
+
+/* HERO */
+header{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+background: radial-gradient(circle,#ec4899,#0f172a);
+}
+
+header h1{
+font-size:3rem;
+}
+
+header p{
+margin-top:10px;
+font-size:1.2rem;
+}
+
+.btn{
+margin-top:20px;
+padding:10px 20px;
+border:none;
+border-radius:25px;
+background:#38bdf8;
+color:black;
+cursor:pointer;
+}
+
+/* SECTION */
+.container{
+max-width:1000px;
+margin:auto;
+padding:40px 20px;
+}
+
+section{
+margin:40px 0;
+}
+
+/* CARD */
+.card{
+background:rgba(255,255,255,0.07);
+padding:20px;
+border-radius:15px;
+margin-bottom:20px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:scale(1.05);
+background:rgba(255,255,255,0.15);
+}
+
+/* SKILLS */
+.skills span{
+display:inline-block;
+background:#f472b6;
+padding:8px 15px;
+border-radius:20px;
+margin:5px;
+color:black;
+}
+
+/* FOOTER */
+footer{
+text-align:center;
+padding:20px;
+border-top:1px solid #334155;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>🌸 Zubaida</h1>
+<p>CSE Student | Future Teacher</p>
+<button class="btn" onclick="scrollDown()">Explore</button>
+</header>
+
+<div class="container" id="content">
+
+<section>
+<h2>👩‍💻 About Me</h2>
+<div class="card">
+I am a passionate CSE student who enjoys building Flutter apps and solving programming problems. My dream is to become a teacher and inspire others through technology.
+</div>
+</section>
+
+<section>
+<h2>📱 Projects</h2>
+
+<div class="card">
+<h3>🏥 Hospital Management System</h3>
+<p>Flutter-based app with CRUD functionality and clean UI design.</p>
+</div>
+
+<div class="card">
+<h3>🌼 Flower Friends App</h3>
+<p>Fun app that assigns unique flowers to 10 names.</p>
+</div>
+
+</section>
+
+<section>
+<h2>🧠 Skills</h2>
+<div class="card skills">
+<span>C</span>
+<span>Dart</span>
+<span>Flutter</span>
+<span>GitHub</span>
+<span>Problem Solving</span>
+</div>
+</section>
+
+<section>
+<h2>🎓 Education</h2>
+<div class="card">
+BSc in Computer Science & Engineering
+</div>
+</section>
+
+<section>
+<h2>📞 Contact</h2>
+<div class="card">
+Email: your@email.com <br>
+GitHub: https://github.com/zubaida922
+</div>
+</section>
+
+</div>
+
+<footer>
+© 2026 Zubaida | Portfolio
+</footer>
+
+<script>
+function scrollDown(){
+document.getElementById("content").scrollIntoView({behavior:"smooth"});
+}
+</script>
+
+</body>
+</html>
