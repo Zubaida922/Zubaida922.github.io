@@ -16,8 +16,8 @@ font-family:'Poppins',sans-serif;
 }
 
 body{
-background: linear-gradient(135deg,#1e3a8a,#0f172a);
-color:#f1f5f9;
+background: linear-gradient(135deg,#ffedd5,#fb7185);
+color:#1f2937;
 overflow-x:hidden;
 }
 
@@ -29,7 +29,7 @@ flex-direction:column;
 justify-content:center;
 align-items:center;
 text-align:center;
-background: radial-gradient(circle,#ec4899,#0f172a);
+background: radial-gradient(circle,#fb923c,#1f2937);
 }
 
 header h1{
@@ -49,14 +49,15 @@ margin-top:20px;
 padding:10px 20px;
 border:none;
 border-radius:25px;
-background:#38bdf8;
-color:black;
+background:#fb923c;
+color:white;
 cursor:pointer;
 transition:0.3s;
 }
 
 .btn:hover{
 transform:scale(1.1);
+background:#f97316;
 }
 
 /* CONTAINER */
@@ -72,13 +73,15 @@ margin:50px 0;
 
 /* CARD */
 .card{
-background:rgba(255,255,255,0.05);
+background:rgba(255,255,255,0.15);
+backdrop-filter: blur(10px);
 padding:20px;
 border-radius:15px;
 margin-bottom:20px;
 opacity:0;
 transform:translateY(30px);
 transition:0.6s;
+color:#111827;
 }
 
 .card.show{
